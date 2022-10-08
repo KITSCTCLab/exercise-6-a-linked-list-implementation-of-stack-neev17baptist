@@ -21,13 +21,14 @@ class Stack:
     """
     It prints all the elements of stack.
     """
-    ptr = self.head
-    while(ptr!=None):
-      print(ptr.data,end="=>")
-      ptr=ptr.next
-    else:
-      print("none!!")
-
+    ptr = self.head 
+    if(self.head is None):
+      print("None") 
+   else:
+    while (ptr):
+      print(ptr.data, end="=>") 
+      ptr = ptr.next 
+    print("None") 
 
 # Do not change the following code
 stack = Stack()
